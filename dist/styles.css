@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    background-color: rgb(255, 41, 41);
+    --second-color: white;
+}
+img{
+    width: 100%;
+}
+#header{
+    height: 120px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: var(--second-color);
+}
+#header h1{
+    text-align: center;
+    grid-column: 1/6;
+}
+#homeBtn{
+    grid-column: 2/3;
+}
+#menuBtn{
+    grid-column: 3/4;
+}
+#contactBtn{
+    grid-column: 4/5;
+}
+#content{
+    padding: 10px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    background-color: var(--second-color);
+}
+.main{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+.menuItem{
+    text-align: center;
+    /* border: 3px solid black; */
+}
+#footer{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--second-color);
+}

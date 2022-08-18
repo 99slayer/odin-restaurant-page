@@ -1,8 +1,8 @@
-const content = document.getElementById('content');
-
 const menuLoad = () =>{
     const headlineCont = document.createElement('div');
+    headlineCont.classList.add('headlineCont');
     const main = document.createElement('div');
+    main.classList.add('main');
 
     const headline = document.createElement('h1');
     const menuItem1Cont = document.createElement('div');
@@ -10,6 +10,11 @@ const menuLoad = () =>{
     const menuItem3Cont = document.createElement('div');
     const menuItem4Cont = document.createElement('div');
     const menuItem5Cont = document.createElement('div');
+    
+    const itemArray = [menuItem1Cont,menuItem2Cont,menuItem3Cont,menuItem4Cont,menuItem5Cont];
+    itemArray.forEach((x)=>{
+        x.classList.add('menuItem');
+    });
 
     const menuItem1Img = document.createElement('img');
     const menuItem1Copy = document.createElement('p');

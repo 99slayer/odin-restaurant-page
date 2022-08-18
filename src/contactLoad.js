@@ -1,8 +1,8 @@
-const content = document.getElementById('content');
-
 const contactLoad = () =>{
     const headlineCont = document.createElement('div');
+    headlineCont.classList.add('headlineCont');
     const main = document.createElement('div');
+    main.classList.add('main','contact');
 
     const headline = document.createElement('h1');
 

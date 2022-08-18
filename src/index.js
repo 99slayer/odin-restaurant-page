@@ -23,4 +23,5 @@ contactBtn.addEventListener('click',function(){
 function clearPage(){
     content.replaceChildren();
 };
+
 homeLoad();

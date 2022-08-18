@@ -1,8 +1,8 @@
-const content = document.getElementById('content')
-
 const homeLoad = () =>{
     const headlineCont = document.createElement('div');
+    headlineCont.classList.add('headlineCont');
     const main = document.createElement('div');
+    main.classList.add('main');
 
     const headline = document.createElement('h1');
     const mainImg = document.createElement('img');
@@ -19,5 +19,4 @@ const homeLoad = () =>{
     main.appendChild(mainImg);
     main.appendChild(mainCopy);
 };
-
 export {homeLoad};
